@@ -1,6 +1,4 @@
-class docker_management::pull_from_public_registry (
-  String $password,
-) {
+class docker_management::pull_from_public_registry {
 
   docker::registry { 'https://index.docker.io/v1/':
     username  => 'fieldhousem',
