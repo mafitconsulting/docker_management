@@ -1,3 +1,3 @@
 class docker_management::params {
-    $password = 'T0nnection'
+    $password = hiera('docker_managment::pull_from_public_registry::password', 'Tcnnection')
 }
